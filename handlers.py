@@ -21,6 +21,8 @@ async def send_to_admin_questions(dp, questions):
 async def send_error(dp, error):
     await bot.send_message(chat_id=admin_id, text="Bot make error with query - {}".format(error))
 
+async def send_shutdown_error(error):
+    await bot.send_message(chat_id=admin_id, text="Bot stopped work")
 
 @dp.message_handler(commands=["start"])
 async def start(message: Message):
