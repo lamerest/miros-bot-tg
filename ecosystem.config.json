@@ -1,11 +1,8 @@
-
 {
     "apps": [{
         "name": "miros-tg-bot",
-        "script": "main.py",
+        "script": "source venv/bin/activate && python main.py",
         "wait_ready": true,
-        "autorestart": true,
-        "interpreter" : "venv/Scripts/python.exe",
-        "interpreter_args": "run python3"
+        "autorestart": true
     }]
 }
