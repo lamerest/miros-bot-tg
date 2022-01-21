@@ -2,11 +2,10 @@
 {
     "apps": [{
         "name": "miros-tg-bot",
-        "script": "/var/miros-bot/main.py",
-        "args": [""],
+        "script": "main.py",
         "wait_ready": true,
         "autorestart": true,
-        "interpreter" : "./var/venvs/botenv/bin/python.exe",
+        "interpreter" : "venv/Scripts/python.exe",
         "interpreter_args": "run python3"
     }]
 }
